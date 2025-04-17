@@ -20,7 +20,7 @@ body.home {
 section::before {
   content: "";
   display: block;
-  height: 120px; 
+  height: 120px;
   margin-top: -120px;
   visibility: hidden;
 }
@@ -62,7 +62,7 @@ section::before {
 
 .wave span:nth-child(2) {
   border-radius: 40%;
-  background: #A14C26 ;
+  background: #A14C26;
   animation: animate 10s linear infinite;
 }
 
@@ -258,11 +258,13 @@ p {
   text-align: center;
   align-self: center;
 }
+
 .competence h2 {
   font-size: 22px;
   margin-bottom: 10px;
   color: #641e16;
 }
+
 .signature-competence {
   color: #012231;
   font-style: italic;
@@ -301,13 +303,16 @@ p {
 .competence-text p {
   font-size: 13px;
   color: #3f3e3e;
+  text-align: center;
 }
 
 .competence-text h2 {
-  font-size: 19px;
-  color: #641e16;
+  font-size: 22px;
+  color: #4e201b;
+  text-align: center;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .competence-group {
     flex-direction: column;
@@ -320,7 +325,6 @@ p {
 }
 
 /* Portfolio */
-
 .portfolio {
   background-color: #fdbb9c;
   padding: 150px 10px 40px 10px;
@@ -329,20 +333,13 @@ p {
   align-items: center;
   text-align: center;
 }
+
 #portfolio h1 {
   color: #641e16;
   font-style: italic;
   font-size: 3em;
   text-align: center;
   align-self: center;
-}
-.porfolio-card0 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 51px auto;
-  padding: 74px;
-  max-width: 2200px;
 }
 
 .portfolio-card0 {
@@ -409,16 +406,16 @@ p {
   font-size: 17px;
   text-align: center;
 }
-/*CSS CONTACT*/
+
+/* Section contact */
 .contact {
   background-color: #e58e65;
   padding: 140px 20px;
   text-align: center;
 }
 
-
 .container {
-  margin: 0 auto; 
+  margin: 0 auto;
   width: 400px;
   max-width: 100%;
   background: rgba(255, 255, 255, 0.1);
@@ -427,40 +424,26 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   backdrop-filter: blur(6px);
-  margin-bottom: 400px; 
+  margin-bottom: 400px;
   align-items: center;
 }
 
-  .title-card {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  form input,
-  form textarea {
-    margin-bottom: 20px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    font-size: 14px;
-  }
-  
-  
+.title-card {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-  .competence-text p {
-    font-size: 13px;
-    color: #4b4343;
-    text-align: center;
-  }
-  
-  .competence-text h2 {
-    font-size: 22px;
-    color: #4e201b;
-    text-align: center;
-    align-items: center;
-  }
+form input,
+form textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
 
-  .button,
+.button,
 button {
   background-color: #994a29;
   color: black;
@@ -479,6 +462,3 @@ button:hover {
   background-color: #b4582d;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-  
-
-  
