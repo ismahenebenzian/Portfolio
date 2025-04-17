@@ -1,21 +1,3 @@
-// Empêche le scroll automatique pendant le chargement
-if (window.location.hash) {
-  // Sauvegarde l’ancre
-  const target = window.location.hash;
-
-  // Scroll en haut temporairement
-  window.scrollTo(0, 0);
-
-  // Attendre que tout soit bien chargé (images, etc.)
-  window.addEventListener("load", () => {
-    // Puis scroller vers l’ancre avec animation douce
-    const section = document.querySelector(target);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  });
-}
-
 function sendMail() {
   let params = {
     first_name: document.getElementById("name").value,
@@ -29,7 +11,7 @@ function sendMail() {
   };
 
   emailjs
-    .send("service_jy1uamr", "template_lgka6cb", params)
+    .send("service_jy1uamr", "template_ynbnnw5", params)
     .then(() => {
       alert("Message envoyé avec succès !");
     })
