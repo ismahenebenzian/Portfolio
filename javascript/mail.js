@@ -11,7 +11,7 @@ function sendMail() {
   };
 
   emailjs
-    .send("service_jy1uamr", "template_ynbnnw5", params)
+    .send("service_jy1uamr", "template_ynbnnw5", params, "qGiYXWsGbUXB3sqcG")
     .then(() => {
       alert("Message envoyé avec succès !");
     })
