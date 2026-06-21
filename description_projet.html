@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descriptions des projets - Ismahene Benzian</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ===== STYLES SPÉCIFIQUES POUR LES DESCRIPTIONS PROJETS ===== */
+    .detail-projet {
+      background: #F8FAFC;
+      padding: 110px 40px 72px;
+    }
+
+    .detail-contenu {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      padding: 44px 48px;
+      border-radius: 24px;
+      border: 1px solid #E2E8F0;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    }
+
+    /* ===== LAYOUT IMAGE À DROITE ===== */
+    .projet-layout {
+      display: flex;
+      gap: 48px;
+      align-items: flex-start;
+      margin: 24px 0 16px 0;
+    }
+
+    .projet-layout .projet-texte {
+      flex: 1;
+    }
+
+    .projet-layout .projet-image {
+      flex: 0 0 300px;
+    }
+
+    .projet-layout .projet-image img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      border: 1px solid #E2E8F0;
+    }
+
+    .projet-layout h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 4px;
+    }
+
+    .projet-layout .sous-titre {
+      color: #64748B;
+      font-size: 1rem;
+      font-weight: 300;
+      margin-bottom: 12px;
+    }
+
+    .projet-layout ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .projet-layout ul li {
+      padding: 6px 0 6px 28px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%230F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>') left center no-repeat;
+      background-size: 16px;
+      color: #1E293B;
+      line-height: 1.6;
+    }
+
+    .projet-layout .tag {
+      display: inline-block;
+      background: #E2E8F0;
+      color: #0F172A;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 30px;
+      margin-right: 8px;
+      margin-top: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .projet-layout .tag.role {
+      background: #0F172A;
+      color: #FFFFFF;
+    }
+
+    .btn-retour {
+      display: inline-block;
+      background: #E2E8F0;
+      color: #0F172A;
+      padding: 9px 26px;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 0.85rem;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background 0.25s ease;
+    }
+
+    .btn-retour:hover {
+      background: #CBD5E1;
+    }
+
+    .separateur {
+      border: none;
+      border-top: 1px solid #E2E8F0;
+      margin: 48px 0;
+    }
+
+    @media (max-width: 768px) {
+      .projet-layout {
+        flex-direction: column-reverse;
+      }
+      .projet-layout .projet-image {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+      .detail-contenu {
+        padding: 24px 20px;
+      }
+      .detail-projet {
+        padding: 90px 20px 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== BARRE DE NAVIGATION ===== -->
+  <header class="topbar">
+    <img src="logo/LOGO.jpeg" class="image" alt="Photo d'Ismahene" />
+    <nav class="navbar">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#profil">Profil</a>
+        <a href="index.html#competence">Compétences</a>
+        <a href="projet.html">Projets</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- PROJET 1 – MIDNIGHT TERROR                                   -->
+  <!-- ============================================================ -->
+  <section id="projet1" class="detail-projet">
+    <div class="detail-contenu">
+      <div class="projet-layout">
+        <div class="projet-texte">
+          <h2>🎮 Midnight Terror</h2>
+          <p class="sous-titre">Jeu d'horreur inspiré de FNAF 4 – Godot 4</p>
+
+          <span class="tag role">Mon rôle : Frontend</span>
+          <span class="tag">HTML / CSS</span>
+          <span class="tag">Godot</span>
+          <span class="tag">GDscript</span>
+
+          <ul style="margin-top:16px;">
+            <li>Création de l'interface utilisateur et des scènes de jeu (chambre, portes, lit, placard)</li>
+            <li>Gestion des interactions joueur : clics, glisser de souris, touche Espace pour la lampe</li>
+            <li>Transitions fluides entre les vues avec effets de fondu et zoom</li>
+            <li>Intégration des retours visuels et des animations</li>
+            <li>Collaboration via Git et organisation avec Trello</li>
+          </ul>
+        </div>
+        <div class="projet-image">
+          <img src="logo\photo sae dev.png" alt="Midnight Terror - Capture d'écran" />
+        </div>
+      </div>
+
+      <a href="projet.html" class="btn-retour">← Retour aux projets</a>
+      <a href="index.html" class="btn-retour" style="margin-left:12px;">🏠 Accueil</a>
+    </div>
+  </section>
+
+  <hr class="separateur" />
+
+  <!-- ============================================================ -->
+  <!-- PROJET 2 – ANALYSE DE DONNÉES DE SANTÉ                       -->
+  <!-- ============================================================ -->
+  <section id="projet2" class="detail-projet">
+    <div class="detail-contenu">
+      <div class="projet-layout">
+        <div class="projet-texte">
+          <h2>📊 Analyse de données de santé publique</h2>
+          <p class="sous-titre">Exploitation de données épidémiologiques – Power BI</p>
+
+          <span class="tag role">Mon rôle : Data Visualisation</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+          <span class="tag">CSV</span>
+
+          <ul style="margin-top:16px;">
+            <li>Nettoyage et préparation des données brutes (fichier CSV de la Cnam)</li>
+            <li>Création de visualisations interactives : cartes, graphiques et indicateurs clés</li>
+            <li>Mise en place des filtres dynamiques par année, région et pathologie</li>
+            <li>Calcul des mesures DAX pour analyser l'évolution des patients</li>
+            <li>Construction d'un tableau de bord professionnel avec 3 pages d'analyse</li>
+          </ul>
+        </div>
+        <div class="projet-image">
+          <img src="logo\SAE BDD.png" alt="Analyse santé - Capture d'écran Power BI" />
+        </div>
+      </div>
+
+      <a href="projet.html" class="btn-retour">← Retour aux projets</a>
+      <a href="index.html" class="btn-retour" style="margin-left:12px;">🏠 Accueil</a>
+    </div>
+  </section>
+
+  <hr class="separateur" />
+
+  <!-- ============================================================ -->
+  <!-- PROJET 3 – PUISSANCE 4 EN RÉSEAU                             -->
+  <!-- ============================================================ -->
+  <section id="projet3" class="detail-projet">
+    <div class="detail-contenu">
+      <div class="projet-layout">
+        <div class="projet-texte">
+          <h2>🔴 Puissance 4 en réseau</h2>
+          <p class="sous-titre">Jeu multijoueur en C avec sockets TCP</p>
+
+          <span class="tag role">Mon rôle : Client / Réseau</span>
+          <span class="tag">C</span>
+          <span class="tag">Sockets TCP</span>
+          <span class="tag">Fork()</span>
+
+          <ul style="margin-top:16px;">
+            <li>Développement du client en langage C avec gestion des sockets TCP</li>
+            <li>Interface utilisateur en terminal : affichage de la grille et saisie des coups</li>
+            <li>Gestion des connexions avec le serveur et envoi des choix de colonnes</li>
+            <li>Tests des 3 niveaux : IA aléatoire, mode deux joueurs, serveur multi-parties</li>
+            <li>Validation des coups et réception des mises à jour de la grille en temps réel</li>
+          </ul>
+        </div>
+        <div class="projet-image">
+          <img src="logo\SAE RESEAU.png" alt="Puissance 4 - Capture d'écran" />
+        </div>
+      </div>
+
+      <a href="projet.html" class="btn-retour">← Retour aux projets</a>
+      <a href="index.html" class="btn-retour" style="margin-left:12px;">🏠 Accueil</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 Ismahene Benzian | 
+      <a href="#" id="mentionsLegalesBtn">Mentions légales</a>
+    </p>
+  </footer>
+
+  <!-- ===== MODALE ===== -->
+  <div id="mentionsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Mentions légales</h3>
+      <p><strong>Éditeur</strong><br>Ismahene Benzian, 58000 NEVERS</p>
+      <p><strong>Hébergement</strong><br>OVH SAS</p>
+      <p><strong>Propriété intellectuelle</strong><br>Tous droits réservés.</p>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("mentionsModal");
+    const btn = document.getElementById("mentionsLegalesBtn");
+    const span = document.querySelector(".close-modal");
+
+    btn.onclick = function(e) {
+      e.preventDefault();
+      modal.style.display = "flex";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) modal.style.display = "none";
+    }
+  </script>
+</body>
+</html>

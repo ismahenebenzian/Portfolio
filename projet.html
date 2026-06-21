@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes projets - Ismahene Benzian</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header class="topbar">
+    <img src="logo\LOGO.jpeg" class="image" alt="Photo d'Ismahene" />
+    <nav class="navbar">
+      <a href="index.html#accueil">Accueil</a>
+      <a href="index.html#profil">Profil</a>
+      <a href="index.html#competence">Compétences</a>
+      <a href="projet.html" style="border-bottom: 2px solid white;">Projets</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Liste des projets -->
+  <section class="projets-liste">
+    <h1>Mes projets</h1>
+    <p class="sous-titre-projets">Chaque projet raconte une histoire, cliquez pour en savoir plus.</p>
+
+    <div class="projects-grid">
+      <!-- Projet 1 -->
+<div class="project-card">
+  <h3>Midnight Terror</h3>
+  <p>Un jeu d'horreur inspiré de FNAF 4 où chaque seconde compte pour survivre.</p>
+  <a href="description_projet.html#projet1" class="btn-savoir">En savoir +</a>
+</div>
+
+<!-- Projet 2 -->
+<div class="project-card">
+  <h3>Analyse de données de santé publique</h3>
+  <p>Exploitation et visualisation d'une base de données épidémiologique sous Power BI</p>
+  <a href="description_projet.html#projet2" class="btn-savoir">En savoir +</a>
+</div>
+
+<!-- Projet 3 -->
+<div class="project-card">
+  <h3>Puissance 4 en réseau</h3>
+  <p>Un Puissance 4 jouable en réseau, codé en C avec des sockets TCP</p>
+  <a href="description_projet.html#projet3" class="btn-savoir">En savoir +</a>
+</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Ismahene Benzian | 
+      <a href="#" id="mentionsLegalesBtn">Mentions légales</a>
+    </p>
+  </footer>
+
+  <!-- Modale -->
+  <div id="mentionsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Mentions légales</h3>
+      <p><strong>Éditeur</strong><br>Ismahene Benzian, 58000 NEVERS</p>
+      <p><strong>Hébergement</strong><br>OVH SAS</p>
+      <p><strong>Propriété intellectuelle</strong><br>Tous droits réservés.</p>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("mentionsModal");
+    const btn = document.getElementById("mentionsLegalesBtn");
+    const span = document.querySelector(".close-modal");
+
+    btn.onclick = function(e) {
+      e.preventDefault();
+      modal.style.display = "flex";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) modal.style.display = "none";
+    }
+  </script>
+</body>
+</html>
